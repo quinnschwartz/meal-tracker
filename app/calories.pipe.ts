@@ -19,7 +19,7 @@ export class CaloriesPipe implements PipeTransform {
           }
         }
         return output;
-      } else if (desiredCalories === "unhealthyMeals") {
+      } else if (desiredCalories === "healthyMeals") {
         for (var i = 0; i < input.length; i++) {
           if (input[i].calories < 500) {
             output.push(input[i]);
